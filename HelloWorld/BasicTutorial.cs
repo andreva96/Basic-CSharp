@@ -53,6 +53,25 @@
             {
                 Console.WriteLine("The number could not be converted to a boolean.");
             }
+
+            var x = 10;
+            var y = 3;
+            var z = 5;
+
+            Console.WriteLine(x + y);
+            Console.WriteLine(x / y);
+            Console.WriteLine((float)x / (float)y);
+            Console.WriteLine(x + y * z);
+            Console.WriteLine((x + y) * z);
+
+            Console.WriteLine(x > z);           // true
+            Console.WriteLine(x == z);          // false
+            Console.WriteLine(x != z);          // true
+            Console.WriteLine(!(x != z));       // false
+            Console.WriteLine(x > y && x > z);  // true
+            Console.WriteLine(x > y && x == z); // false
+            Console.WriteLine(x > y || x == z);  // true
+
         }
     }
 }
