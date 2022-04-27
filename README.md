@@ -1,1 +1,1 @@
-HelloWorld
+In my the road to learn and refresh my memory about C# / .Net I've gone through some basic tutorials as following Mosh Hamedani's youtube video (https://www.youtube.com/watch?v=gfkTfcpWqAY&ab_channel=ProgrammingwithMosh) and maybe add some extra code from Udemy courses.
