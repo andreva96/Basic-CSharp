@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+﻿namespace CSharpTutorial
 {
     // https://www.youtube.com/watch?v=gfkTfcpWqAY&ab_channel=ProgrammingwithMosh tutorial
     class BasicTutorial
