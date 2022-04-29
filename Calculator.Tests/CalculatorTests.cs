@@ -1,15 +1,15 @@
 using Xunit;
 
-namespace Calculations.Tests
+namespace XUnitExample.Tests
 {
-    public class CalculatorTest
+    public class CalculatorTests
     {
         [Fact]
         public void Add_GivenTwoIntValues_ReturnsInt()
         {
             var calc = new Calculator();
-            var result = calc.Add(1,2);
-            Assert.Equal(3,result);
+            var result = calc.Add(1, 2);
+            Assert.Equal(3, result);
         }
 
         [Fact]

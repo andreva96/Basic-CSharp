@@ -1,9 +1,9 @@
 ﻿using System;
 using Xunit;
 
-namespace Calculations.Tests
+namespace XUnitExample.Tests
 {
-    public class NamesTest
+    public class NamesTests
     {
         [Fact]
         public void MakeFullNameTest()
@@ -14,7 +14,7 @@ namespace Calculations.Tests
             Assert.StartsWith("Andre", result);
             Assert.EndsWith("Almeida", result, StringComparison.InvariantCultureIgnoreCase);
 
-            Assert.Matches("[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]",result);
+            Assert.Matches("[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]", result);
         }
 
         [Fact]

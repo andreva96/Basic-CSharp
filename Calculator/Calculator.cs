@@ -1,4 +1,4 @@
-﻿namespace Calculations
+﻿namespace XUnitExample
 {
     public class Calculator
     {
@@ -11,9 +11,6 @@
         {
             return a + b;
         }
-
-
-        public List<int> FiboNumbers => new List<int> { 1, 1, 2, 3, 5, 8, 13 };
 
         static void Main(string[] args)
         {
