@@ -62,12 +62,14 @@ namespace XUnitExample.Tests
         }
 
         [Theory]
-        [MemberData(nameof(TestDataShare.IsOddOrEvenData), MemberType = typeof(TestDataShare))]
+        [MemberData(nameof(TestDataShare.IsOddOrEvenExternalData), MemberType = typeof(TestDataShare))]
         public void IsOdd_TestOddAndEven(int value, bool expected)
         {
             var result = _fiboFixture.calc.IsOdd(value);
             Assert.Equal(expected,result); ;
         }
+
+
 
         public void Dispose()
         {

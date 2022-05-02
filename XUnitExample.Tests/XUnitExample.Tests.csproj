@@ -28,4 +28,10 @@
     <ProjectReference Include="..\XUnitExample\XUnitExample.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="IsOddOrEvenTestData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
