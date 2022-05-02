@@ -61,6 +61,29 @@ namespace XUnitExample.Tests
             Assert.Equal(expectedCollection, _fiboFixture.calc.FiboNumbers);
         }
 
+        [Fact]
+        public void IsOdd_GivenOddValue_ReturnsTrue()
+        {
+            var result = _fiboFixture.calc.IsOdd(1);
+            Assert.True(result);
+        }
+        
+        [Fact]
+        public void IsOdd_GivenOddValue_ReturnsFalse()
+        {
+            var result = _fiboFixture.calc.IsOdd(1);
+            Assert.False(result);
+        }
+
+        [Theory]
+        [InlineData(1,true)]
+        [InlineData(200,false)]
+        public void IsOdd_TestOddAndEven(int value,bool expected)
+        {
+            var result = _fiboFixture.calc.IsOdd(value);
+            Assert.True(expected);
+        }
+
         public void Dispose()
         {
             memoryStream.Dispose();
