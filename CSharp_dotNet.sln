@@ -5,9 +5,9 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTutorial", "CSharpTutorial\CSharpTutorial.csproj", "{A4D681BC-9AB3-49F6-914A-9130C658DCD1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample", "Calculator\XUnitExample.csproj", "{B7A118CF-123F-46D9-B0B6-E22CA5AD472B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample", "XUnitExample\XUnitExample.csproj", "{B7A118CF-123F-46D9-B0B6-E22CA5AD472B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample.Tests", "Calculator.Tests\XUnitExample.Tests.csproj", "{7E43FE62-143D-430A-BC06-C2921D9910D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample.Tests", "XUnitExample.Tests\XUnitExample.Tests.csproj", "{7E43FE62-143D-430A-BC06-C2921D9910D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

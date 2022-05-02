@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Calculator\XUnitExample.csproj" />
+    <ProjectReference Include="..\XUnitExample\XUnitExample.csproj" />
   </ItemGroup>
 
 </Project>
