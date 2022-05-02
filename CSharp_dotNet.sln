@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample", "XUnitExampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExample.Tests", "XUnitExample.Tests\XUnitExample.Tests.csproj", "{7E43FE62-143D-430A-BC06-C2921D9910D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestDrivenDevelopment", "CSharpTestDrivenDevelopment\CSharpTestDrivenDevelopment.csproj", "{FCB17497-39C2-475A-AF17-99AE6A7DB81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTestDrivenDevelopment.Tests", "CSharpTestDrivenDevelopment.Tests\CSharpTestDrivenDevelopment.Tests.csproj", "{3571F999-86CD-4014-8BA9-1DCE5D905FCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7E43FE62-143D-430A-BC06-C2921D9910D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E43FE62-143D-430A-BC06-C2921D9910D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E43FE62-143D-430A-BC06-C2921D9910D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB17497-39C2-475A-AF17-99AE6A7DB81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB17497-39C2-475A-AF17-99AE6A7DB81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB17497-39C2-475A-AF17-99AE6A7DB81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB17497-39C2-475A-AF17-99AE6A7DB81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3571F999-86CD-4014-8BA9-1DCE5D905FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3571F999-86CD-4014-8BA9-1DCE5D905FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3571F999-86CD-4014-8BA9-1DCE5D905FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3571F999-86CD-4014-8BA9-1DCE5D905FCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
