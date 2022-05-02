@@ -32,7 +32,7 @@ namespace XUnitExample.Tests
         }
 
         [Fact]
-        [Trait("Category","Fibo")]
+        [Trait("Category", "Fibo")]
         public void FiboDoesNotIncludeZero()
         {
             Assert.All(_fiboFixture.calc.FiboNumbers, n => Assert.NotEqual(0, n));
@@ -61,27 +61,12 @@ namespace XUnitExample.Tests
             Assert.Equal(expectedCollection, _fiboFixture.calc.FiboNumbers);
         }
 
-        [Fact]
-        public void IsOdd_GivenOddValue_ReturnsTrue()
-        {
-            var result = _fiboFixture.calc.IsOdd(1);
-            Assert.True(result);
-        }
-        
-        [Fact]
-        public void IsOdd_GivenOddValue_ReturnsFalse()
-        {
-            var result = _fiboFixture.calc.IsOdd(1);
-            Assert.False(result);
-        }
-
         [Theory]
-        [InlineData(1,true)]
-        [InlineData(200,false)]
-        public void IsOdd_TestOddAndEven(int value,bool expected)
+        [MemberData(nameof(TestDataShare.IsOddOrEvenData), MemberType = typeof(TestDataShare))]
+        public void IsOdd_TestOddAndEven(int value, bool expected)
         {
             var result = _fiboFixture.calc.IsOdd(value);
-            Assert.True(expected);
+            Assert.Equal(expected,result); ;
         }
 
         public void Dispose()
