@@ -3,27 +3,35 @@ using Xunit;
 
 namespace XUnitExample.Tests
 {
-    public class CostumerTests
+    [Collection("Customer")]
+    public class CustomerTests
     {
+        private readonly CustomerFixture _customerFixture;
+        
+        public CustomerTests(CustomerFixture customerFixture)
+        {
+            _customerFixture = customerFixture;
+        }
+
         [Fact]
         public void CheckNameNotEmpty()
         {
-            var costumer = new Customer();
-            Assert.NotNull(costumer.Name);
-            Assert.False(string.IsNullOrEmpty(costumer.Name));
+            var Customer = _customerFixture.Cust;
+            Assert.NotNull(Customer.Name);
+            Assert.False(string.IsNullOrEmpty(Customer.Name));
         }
 
         [Fact]
         public void CheckLegiForDiscount()
         {
-            var customer = new Customer();
+            var customer = _customerFixture.Cust;
             Assert.InRange(customer.Age, 25, 40);
         }
 
         [Fact]
         public void GetOrdersByNameNotNull()
         {
-            var customer = new Customer();
+            var customer = _customerFixture.Cust;
             var exceptionDetails = Assert.Throws<ArgumentException>(()=> customer.GetOrdersByName(""));
             Assert.Equal("Hello",exceptionDetails.Message);
         }
